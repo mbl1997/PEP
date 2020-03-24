@@ -1,0 +1,12 @@
+Links para tutorial de autenticação para diferentes tipos de usuários:
+Part 1: Setting up our Models and Auth Guards
+https://youtu.be/iKRLrJXNN4M
+
+Part 2: Creating Login Pages and Logging in Users
+https://youtu.be/Ir2nAD9UDGg
+
+Part 3: Modifying Middleware to Support Multiple Users
+https://youtu.be/P8T3MjZPDdI
+
+Part 4: Logging Out Multiple User Types
+https://youtu.be/55YoSeS6egs

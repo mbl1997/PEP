@@ -1,0 +1,68 @@
+PASSOS PARA CLONAR E ACESSAR O PROJETO EM SUAS MAQUINAS LOCAIS
+
+Resumo dos códigos:
+git clone https://github.com/Neimarmg/PEP.git
+composer install
+php artisan migrate
+“criar arquivo .env e colocar os dados”
+php artisan serve
+acessar o site com a url: localhost:8000
+
+Explicação de cada passo:
+1) Certifiquem-se de que o XAMPP esteja ligado e com os serviços em execução (Apache Web Server e Mysql Database)
+
+2) No terminal, navegar até o diretório onde vc deseja clonar o repositório do git e digitar o seguinte comando:
+git clone https://github.com/Neimarmg/PEP.git
+
+3) No terminal, acessar a "site" onde se encontram os arquivos do site feito em laravel e digitar o seguinte comando:
+composer install
+(com esse comando ele vai criar a pasta vendor que tem o artisan e tudo mais)
+
+4) Digitar o seguinte comando e confirmar com yes quando solicitado:
+php artisan migrate
+
+5) Abram o projeto em alguma IDE de sua preferência e criem um arquivo ".env" na raiz do projeto. Ai será necessário colocar ali os dados de conexão com o servidor e tal. Para isso, colem no arquivo .env criado os seguinte:
+
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:pgUyku66EiysFDdj+8EfF3Gisv4NJLkxq06EgZPAy2o=
+APP_DEBUG=true
+APP_LOG_LEVEL=debug
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=mysql.pep.kinghost.net
+DB_PORT=3306
+DB_DATABASE=pep
+DB_USERNAME=pep
+DB_PASSWORD=84d235g4r8h
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+
+6) Depois disso feito e de salvarem o arquivo, para poder acessar o site pelo navegador, digitar o seguinte comando:
+php artisan serve
+
+7) Pra acessar o site no navegador utilizar a seguinte url:
+localhost:8000
+
+Qq dúvida ou dificuldade estou a disposição!
+Abraços
+Rodrigo
